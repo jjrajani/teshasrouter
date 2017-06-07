@@ -9,8 +9,8 @@
       font-style: normal !important;
       margin: 4vh 0;
       padding: 0 !important;
-      // color: #BC0097 !important;
-      color: #701D5F;
+      color: #C90059 !important;
+      opacity: 1 !important;
       i {
         margin-right: 0.5vw;
       }
@@ -50,7 +50,8 @@
   }
   #education {
     a {
-      color: #BC0097;
+      color: #C90059;
+      opacity: 1;
       //lighten(#BC0097, 50%);
       // margin: 0 0 1vh 2vw;
       transition: opacity 0.5s;
