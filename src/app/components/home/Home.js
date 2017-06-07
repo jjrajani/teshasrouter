@@ -16,7 +16,7 @@ class Home extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Home</p>
-              <NavLink to="/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
+              <NavLink to="/portfolio/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
             </div>
             <div className="left">
               <div className="title-wrapper">
@@ -37,7 +37,7 @@ class Home extends Component {
           <div className="sub-content">
             <div className="sub-header">
               <p>Projects</p>
-              <NavLink to="/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
+              <NavLink to="/portfolio/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
             </div>
             <div className="projects">
               <div className="project">
