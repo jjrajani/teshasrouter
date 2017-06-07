@@ -3,6 +3,11 @@ import './resume.scss';
 const resume = require("../../assets/Resume.pdf");
 
 class Resume extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  
   render() {
     return (
       <div className="main-content">

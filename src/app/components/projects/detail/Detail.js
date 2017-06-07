@@ -13,6 +13,10 @@ class Detail extends Component {
     }
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     console.log('this.state', this.state);
     let project = this.state.project;
@@ -20,7 +24,7 @@ class Detail extends Component {
        <div id="detail">
          <div className="project">
            <div className="left">
-             <p className="title">{project.title}</p>
+             <p className="app-title title">{project.title}</p>
              { project.scale.length > 1 ? <p className="size">{project.scale}</p> : null }
              <p className="blurb">{project.blurb}</p>
              <p><span className="bold">Client: </span>{project.client}</p>
@@ -45,7 +49,7 @@ class Detail extends Component {
     });
     return (
       <ul>
-        <li className="list-head"><p className="title">Details</p></li>
+        <li className="list-head"><p className="title"><span className="bold">Details</span></p></li>
         {details}
       </ul>
     );
@@ -57,7 +61,7 @@ class Detail extends Component {
     });
     return (
       <ul>
-        <li className="list-head"><p className="title">Technology</p></li>
+        <li className="list-head"><p className="title"><span className="bold">Technology</span></p></li>
         {techs}
       </ul>
     );

@@ -10,6 +10,7 @@ import './app.scss';
 import { Contact, Detail, Home, Projects, Resume, Nav, Footer } from "./components";
 
 class App extends Component {
+
   render() {
     return (
       <Router>

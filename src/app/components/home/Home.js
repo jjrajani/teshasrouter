@@ -9,6 +9,9 @@ const PSP = require("../../assets/PSP.png");
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="main-content">
@@ -16,7 +19,7 @@ class Home extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Home</p>
-              <NavLink to="/portfolio/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
+              <Link to="/portfolio/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="left">
               <div className="title-wrapper">
@@ -37,7 +40,7 @@ class Home extends Component {
           <div className="sub-content">
             <div className="sub-header">
               <p>Projects</p>
-              <NavLink to="/portfolio/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
+              <Link to="/portfolio/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="projects">
               <Link to="/portfolio/project/ADP">

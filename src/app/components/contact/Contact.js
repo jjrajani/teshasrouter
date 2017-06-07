@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './contact.scss';
 
 class Contact extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="main-content">
