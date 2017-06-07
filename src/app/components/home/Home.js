@@ -28,7 +28,7 @@ class Home extends Component {
               <p className="blurb">I have contributed to more than 3 large-scale applications and many smaller, design centered, applications. When I&#8216;m not coding you&#8216;ll find me either playing paino or planning my next excurssion.</p>
             </div>
             <div className="home-image">
-              <img src={logo} alt="lost in the trees"/>
+              <img src={logo} alt="Lost in the trees"/>
             </div>
           </div>
           <div className="sub-content">
@@ -40,7 +40,7 @@ class Home extends Component {
               <div className="project">
                 <div className="screen-shot">
                   <img className="image" src={ADP} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop}/>
+                  <img className="laptop" src={laptop} alt="Laptop"/>
                 </div>
                 <p className="title">ADP Monitoring Services</p>
                 <p className="language">ReactJS</p>
@@ -48,7 +48,7 @@ class Home extends Component {
               <div className="project">
                 <div className="screen-shot">
                   <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop}/>
+                  <img className="laptop" src={laptop} alt="Laptop"/>
                 </div>
                 <p className="title">CulturaLink Interpretation</p>
                 <p className="language">ReactJS</p>
@@ -56,7 +56,7 @@ class Home extends Component {
               <div className="project">
                 <div className="screen-shot">
                   <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop}/>
+                  <img className="laptop" src={laptop} alt="Laptop"/>
                 </div>
                 <p className="title">MailChimp Annual Report</p>
                 <p className="language">Ruby on Rails</p>
@@ -64,7 +64,7 @@ class Home extends Component {
               <div className="project">
                 <div className="screen-shot">
                   <img className="image" src={PSP} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop}/>
+                  <img className="laptop" src={laptop} alt="Laptop"/>
                 </div>
                 <p className="title">PSP Printing</p>
                 <p className="language">Angular2</p>

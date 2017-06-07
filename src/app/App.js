@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Redirect,
   Switch,
 } from 'react-router-dom';
-import logo from './logo.svg';
 import './app.scss';
 
 import { Contact, Home, Projects, Resume, Nav, Footer } from "./components";
@@ -21,11 +19,11 @@ class App extends Component {
             <Nav />
           </div>
           <Switch>
-            <Redirect exact from ="/" to="home"/>
-            <Route exact path="/home" component={Home}/>
-            <Route path="/resume" component={Resume}/>
-            <Route path="/projects" component={Projects}/>
-            <Route path="/contact" component={Contact}/>
+            <Redirect exact from ="/portfolio" to="home"/>
+            <Route exact path="/portfolio/home" component={Home}/>
+            <Route path="/portfolio/resume" component={Resume}/>
+            <Route path="/portfolio/projects" component={Projects}/>
+            <Route path="/portfolio/contact" component={Contact}/>
           </Switch>
           <Footer/>
         </div>
