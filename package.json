@@ -2,6 +2,7 @@
   "name": "portfoilo_two",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jjrajani.github.io/react_portfolio",
   "devDependencies": {
     "node-sass": "^4.5.3",
     "react-scripts": "1.0.7",
