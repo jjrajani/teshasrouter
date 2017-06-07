@@ -52,7 +52,7 @@ class Projects extends Component {
               <p
                 className={this.state.mode === "fullstack" ? "bright" : "dim"}
                 onClick={this._toggleVisible.bind(this, "fullstack")}
-              >Full-stack
+              >Fullstack
               </p>
             </div>
           </div>
