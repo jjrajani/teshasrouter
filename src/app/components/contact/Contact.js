@@ -15,7 +15,7 @@ class Contact extends Component {
             </div>
           </div>
           <div className="sub-content">
-            <form id="gform" action="https://script.google.com/macros/s/AKfycbyhthAKEEKBnlqLKVFsyfv6wmej4Q_0PKisv_S3xOv4YDtYCVw/exec" encType="multipart/form-data" method="POST">
+            <form id="form" action="https://script.google.com/macros/s/AKfycbyhthAKEEKBnlqLKVFsyfv6wmej4Q_0PKisv_S3xOv4YDtYCVw/exec" encType="multipart/form-data" method="POST">
               <ul>
                 <li>
                   <label htmlFor="name">Your name:</label>
