@@ -1,0 +1,46 @@
+#detail {
+  .project {
+    padding-top: 2vh;
+    border-top: solid 1px lighten(black, 85%);
+    a {
+      color: lighten(black, 30%);
+    }
+    ul {
+      margin: 0 0 4vh 0;
+    }
+    p {
+      color: lighten(black, 30%);
+      margin: 1vh 5%;
+      font-size: 1.3vh;
+      &.list-item {
+        margin-top: 0;
+        margin-bottom: 0.25vh;
+      }
+      &.title {
+        font-weight: 600;
+      }
+      &.blurb {
+        margin-top: 4vh !important;
+        margin-bottom: 4vh !important;
+        line-height: 1.9vh;
+        letter-spacing: 0.02rem;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    }
+    .screen-shot {
+      position: relative;
+      .laptop {
+        width: 100%;
+      }
+      .image {
+        position: absolute;
+        width: 72.25%;
+        top: 19%;
+        left: 14%;
+        border-radius: 2px;
+      }
+    }
+  }
+}

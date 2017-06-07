@@ -6,7 +6,6 @@ const culturaLink = require("../../assets/culturalink.png");
 const ADP = require("../../assets/ADP.png");
 const mailChimp = require("../../assets/mail-chimp.png");
 const PSP = require("../../assets/PSP.png");
-// const logo = require("../../assets/lost_in_the_trees_small.jpg");
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
 
 class Home extends Component {

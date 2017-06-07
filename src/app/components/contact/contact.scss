@@ -4,4 +4,54 @@
     display: none;
     visibility: hidden;
   }
+  .sub-content:first-child {
+    padding-bottom: 3vh !important;
+  }
+  .sub-header {
+    display: flex;
+    flex-direction: column;
+    .phone, .email {
+      margin: 4vh 0 0 0;
+    }
+    .phone, .email, .skype {
+      color: #BC0097 !important;
+      i {
+        margin: 0 1vw 0 0 !important;
+      }
+    }
+  }
+  .message {
+    font-size: 3.4vh;
+    margin: 2vh 0;
+    color: lighten(black, 10%);
+  }
+  form {
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: bold;
+          font-size: 1.5vh;
+          margin: 1vh 0;
+          color: lighten(black, 30%);
+        }
+        input {
+          padding: 1.5vh 2vw;
+          margin: 1vh 0 2vh;
+        }
+        textarea {
+          padding: 1.5vh 2vw;
+          margin: 1vh 0 2vh;
+          resize: none;
+          min-height: 18vh;
+        }
+      }
+    }
+    button {
+      width: 20%;
+      padding: 1.5vh 2vw;
+      margin: 0 0 0 auto;
+    }
+  }
 }

@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import './app.scss';
 
-import { Contact, Home, Projects, Resume, Nav, Footer } from "./components";
+import { Contact, Detail, Home, Projects, Resume, Nav, Footer } from "./components";
 
 class App extends Component {
   render() {
@@ -23,6 +23,7 @@ class App extends Component {
             <Route exact path="/home" component={Home}/>
             <Route path="/resume" component={Resume}/>
             <Route path="/projects" component={Projects}/>
+            <Route path="/project/:projectName" component={Detail}/>
             <Route path="/contact" component={Contact}/>
           </Switch>
           <Footer/>
