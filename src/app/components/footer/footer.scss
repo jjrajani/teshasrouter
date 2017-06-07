@@ -30,11 +30,19 @@
       align-items: center;
     }
     &.right {
-      flex-direction: row;
-      justify-content: flex-end;
+      flex-direction: row !important;
+      justify-content: flex-end !important;
       a {
         min-width: 75px;
         text-align: right;
+      }
+    }
+    @media screen and (min-width: 769px) {
+      &.left {
+        flex-direction: row !important;
+        a {
+          min-width: 75px;
+        }
       }
     }
   }
