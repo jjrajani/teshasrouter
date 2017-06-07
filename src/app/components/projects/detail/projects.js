@@ -59,7 +59,7 @@ const PROJECTS = {
     client: "Personal",
     blurb: "A variation of Whack-a-Mole using Nicholas Cage's face!  I built this game while at The Iron Yard where placeCage.com was my instructors go to image placeholder. My first time working with DOM Manipuation, this rudamentary application is one of my favorite creations.",
     details: ["Frontend Development", "Game Development"],
-    technology: ["Vanilla JavaScript", "CSS"],
+    technology: ["Vanilla JavaScript", "HTML/CSS"],
     scale: "",
     link: "http://cage-smash.surge.sh/",
   }
