@@ -26,7 +26,7 @@ class Projects extends Component {
     return (
       <div className="main-content">
         <div id="projects">
-          <div className="sub-content">
+          <div className="sub-content left">
             <div className="sub-header">
             <p>Projects</p>
             <p>Here are my projects and personal work.</p>
@@ -55,7 +55,7 @@ class Projects extends Component {
               </p>
             </div>
           </div>
-          <div className="sub-content">
+          <div className="sub-content right">
             <div className="projects">
               <div className="project">
                 <Link to="/project/ADP">

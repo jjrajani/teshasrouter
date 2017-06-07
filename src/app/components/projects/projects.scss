@@ -79,3 +79,15 @@
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  #projects {
+    display: flex;
+    .left {
+      width: 30%;
+    }
+    .right {
+      width: 70%;
+    }
+  }
+}

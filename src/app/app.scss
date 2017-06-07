@@ -43,3 +43,10 @@
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}

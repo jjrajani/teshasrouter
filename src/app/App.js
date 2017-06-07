@@ -20,6 +20,7 @@ class App extends Component {
           </div>
           <Switch>
             <Redirect exact from ="/portfolio" to="home"/>
+            <Redirect exact from ="/" to="portfolio/home"/>
             <Route exact path="/portfolio/home" component={Home}/>
             <Route path="/portfolio/resume" component={Resume}/>
             <Route path="/portfolio/projects" component={Projects}/>

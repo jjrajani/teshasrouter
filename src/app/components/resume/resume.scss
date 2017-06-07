@@ -67,3 +67,15 @@
     padding-bottom: 11vh !important;
   }
 }
+
+@media screen and (min-width: 769px) {
+  #resume {
+    display: flex;
+    .left {
+      width: 30%;
+    }
+    .right {
+      width: 70%;
+    }
+  }
+}

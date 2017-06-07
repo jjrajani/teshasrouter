@@ -13,21 +13,25 @@ class Home extends Component {
     return (
       <div className="main-content">
         <div id="home">
-          <div className="sub-content">
+          <div className="sub-content top">
             <div className="sub-header">
               <p>Home</p>
               <NavLink to="/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
             </div>
-            <div className="title-wrapper">
-              <p className="title one">WEB DEVELOPER</p>
-              <p className="title two">FRONT–END ENGINEER</p>
+            <div className="left">
+              <div className="title-wrapper">
+                <p className="title one">WEB DEVELOPER</p>
+                <p className="title two">FRONT–END ENGINEER</p>
+              </div>
+              <div className="blurb-wrapper">
+                <p className="blurb">I&#8216;m Jenna Rajani and love code for it&#8216;s endless possibility. I enjoy focusing on the user-experience as well as process efficiency while creating web applications.</p>
+                <p className="blurb">I have contributed to more than 3 large-scale applications and many smaller, design centered, applications. When I&#8216;m not coding you&#8216;ll find me either playing paino or planning my next excurssion.</p>
+              </div>
             </div>
-            <div className="blurb-wrapper">
-              <p className="blurb">I&#8216;m Jenna Rajani and love code for it&#8216;s endless possibility. I enjoy focusing on the user-experience as well as process efficiency while creating web applications.</p>
-              <p className="blurb">I have contributed to more than 3 large-scale applications and many smaller, design centered, applications. When I&#8216;m not coding you&#8216;ll find me either playing paino or planning my next excurssion.</p>
-            </div>
-            <div className="home-image">
-              <img src={logo} alt="Lost in the trees"/>
+            <div className="right">
+              <div className="home-image">
+                <img src={logo} alt="Lost in the trees"/>
+              </div>
             </div>
           </div>
           <div className="sub-content">

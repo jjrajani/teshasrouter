@@ -28,3 +28,9 @@ $red: #C90059; // red
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  #nav {
+    align-self: flex-end;
+  }
+}

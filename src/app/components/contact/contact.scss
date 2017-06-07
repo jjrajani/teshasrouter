@@ -39,12 +39,14 @@
         input {
           padding: 1.5vh 2vw;
           margin: 1vh 0 2vh;
+          width: 60%;
         }
         textarea {
           padding: 1.5vh 2vw;
           margin: 1vh 0 2vh;
           resize: none;
           min-height: 18vh;
+          width: 100%;
         }
       }
     }
@@ -52,6 +54,17 @@
       width: 20%;
       padding: 1.5vh 2vw;
       margin: 0 0 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  #contact {
+    display: flex;
+    .left {
+      width: 30%;
+    }
+    .right {
+      width: 70%;
     }
   }
 }
