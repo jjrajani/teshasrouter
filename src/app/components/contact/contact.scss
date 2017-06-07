@@ -15,7 +15,7 @@
     }
     .phone, .email, .skype {
       // color: lighten(#701D5F, 50%) !important;
-      color: #701D5F !important;
+      color: #C90059 !important;
       opacity: 0.7 !important;
       transition: opacity 1s;
       margin-right: auto;
@@ -77,11 +77,11 @@
     button {
       width: 20%;
       padding: 1.5vh 2vw;
-      margin: 0 0 0 auto;
+      margin: 4vh 0 -4vh auto;
       border-radius: 4px;
-      border: solid 1px #701D5F;//#701D5F;//lighten(black, 90%);
+      border: solid 1px #C90059;//#701D5F;//lighten(black, 90%);
       background-color: white;
-      color: #701D5F;
+      color: #C90059;
       cursor: pointer;
       transition: background-color 1s;
       &:hover {
