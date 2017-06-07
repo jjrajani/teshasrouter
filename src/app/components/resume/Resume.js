@@ -58,7 +58,7 @@ class Resume extends Component {
               <p>
                 <span className="bold">All Things Considered </span>
                 <a href="http://www.hunter.cuny.edu/main/" target="blank">CUNY Hunter </a>
-                 - NYC, 2005
+                 - NYC, 2005-2008
               </p>
               <p>
                 <span className="bold">Front–End Engineering </span>
