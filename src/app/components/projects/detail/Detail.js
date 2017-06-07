@@ -21,10 +21,12 @@ class Detail extends Component {
          <div className="project">
            <div className="left">
              <p className="title">{project.title}</p>
+             { project.scale.length > 1 ? <p className="size">{project.scale}</p> : null }
              <p className="blurb">{project.blurb}</p>
              <p><span className="bold">Client: </span>{project.client}</p>
              { this._projectDetails(project.details) }
              { this._projectTechnology(project.technology) }
+             { project.link ? <p><span className="bold">Live Site: </span><a href={project.link} target="blank">{project.title}</a></p> : null }
            </div>
            <div className="right">
              <div className="screen-shot">
