@@ -7,7 +7,7 @@ class Resume extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
-  
+
   render() {
     return (
       <div className="main-content">
@@ -18,13 +18,13 @@ class Resume extends Component {
               <a href={resume} target="blank"><i className="fa fa-file-pdf-o" aria-hidden="true"></i>Dowload PDF</a>
             </div>
             <div className="sub-nav">
-              <a href="#frontend" target="blank">Frontend</a>
-              <a href="#design" target="blank">Design</a>
-              <a href="#backend" target="blank">Backend</a>
-              <a href="#frameworks" target="blank">Frameworks</a>
-              <a href="#environments" target="blank">Environments</a>
-              <a href="#education" target="blank">Education</a>
-              <a href="#travels" target="blank">Travels</a>
+              <a href="#frontend">Frontend</a>
+              <a href="#design">Design</a>
+              <a href="#backend">Backend</a>
+              <a href="#frameworks">Frameworks</a>
+              <a href="#environments">Environments</a>
+              <a href="#education">Education</a>
+              <a href="#travels">Travels</a>
             </div>
           </div>
           <div className="right">
