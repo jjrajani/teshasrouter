@@ -96,6 +96,7 @@
 @media screen and (min-width: 769px) {
   #contact {
     display: flex;
+    flex-direction: row-reverse;
     .left {
       width: 30%;
     }
