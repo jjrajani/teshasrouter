@@ -14,10 +14,7 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      professional: true,
-      personal: true,
-      frontend: true,
-      fullstack: true,
+      mode: "All"
     }
   }
 
@@ -31,25 +28,29 @@ class Projects extends Component {
             <p>Projects</p>
             <p>Here are my projects and personal work.</p>
             </div>
-            {this.state.professional}
             <div className="sub-nav">
               <p
-                className={this.state.professional ? "bright" : "dim"}
+                className={this.state.mode === "All" ? "bright" : "dim"}
+                onClick={this._toggleVisible.bind(this, "All")}
+              >All
+              </p>
+              <p
+                className={this.state.mode === "professional" ? "bright" : "dim"}
                 onClick={this._toggleVisible.bind(this, "professional")}
               >Professional
               </p>
               <p
-                className={this.state.personal ? "bright" : "dim"}
+                className={this.state.mode === "personal" ? "bright" : "dim"}
                 onClick={this._toggleVisible.bind(this, "personal")}
               >Personal
               </p>
               <p
-                className={this.state.frontend ? "bright" : "dim"}
+                className={this.state.mode === "frontend" ? "bright" : "dim"}
                 onClick={this._toggleVisible.bind(this, "frontend")}
               >Frontend
               </p>
               <p
-                className={this.state.fullstack ? "bright" : "dim"}
+                className={this.state.mode === "fullstack" ? "bright" : "dim"}
                 onClick={this._toggleVisible.bind(this, "fullstack")}
               >Full-stack
               </p>
@@ -60,7 +61,7 @@ class Projects extends Component {
               <div className="project">
                 <Link to="/portfolio/project/ADP">
                   <div className="screen-shot">
-                    <div className={this.state.professional || this.state.frontend ? "bright" : "dim"}></div>
+                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
@@ -71,7 +72,7 @@ class Projects extends Component {
               <div className="project">
                 <Link to="/portfolio/project/culturaLink">
                   <div className="screen-shot">
-                    <div className={this.state.professional || this.state.fullstack || this.state.frontend ? "bright" : "dim"}></div>
+                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "fullstack" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
@@ -82,7 +83,7 @@ class Projects extends Component {
               <div className="project">
                 <Link to="/portfolio/project/mailChimp">
                   <div className="screen-shot">
-                    <div className={this.state.professional || this.state.frontend ? "bright" : "dim"}></div>
+                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
@@ -93,7 +94,7 @@ class Projects extends Component {
               <div className="project">
                 <Link to="/portfolio/project/PSP">
                   <div className="screen-shot">
-                    <div className={this.state.professional || this.state.frontend ? "bright" : "dim"}></div>
+                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
@@ -104,7 +105,7 @@ class Projects extends Component {
               <div className="project">
                 <Link to="/portfolio/project/myGarden">
                   <div className="screen-shot">
-                    <div className={this.state.personal || this.state.frontend || this.state.fullstack ? "bright" : "dim"}></div>
+                    <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" || this.state.mode === "fullstack" ? "bright" : "dim"}></div>
                     <img className="image" src={myGarden} alt="myGarden screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
@@ -115,7 +116,7 @@ class Projects extends Component {
               <div className="project">
                 <Link to="/portfolio/project/cageSmash">
                   <div className="screen-shot">
-                    <div className={this.state.personal || this.state.frontend ? "bright" : "dim"}></div>
+                    <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={cageSmash} alt="cageSmash screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
@@ -132,24 +133,8 @@ class Projects extends Component {
 
   _toggleVisible = (key, e) => {
     let state = this.state;
-    let fresh = true;
-    Object.keys(state).forEach((k) => {
-      if (state[k] === false) { fresh = false }
-    });
-    if (this.state[key] === true && !fresh) {
-      Object.keys(state).forEach((k) => { state[k] = true; });
-    } else {
-      state = this._switchVisibile(state, key);
-    }
+    state.mode = key;
     this.setState(state);
-  }
-  _switchVisibile = (state, key) => {
-    Object.keys(state).forEach((k) => {
-      k === key
-      ? state[k] = true
-      : state[k] = false;
-    });
-    return state;
   }
 }
 
