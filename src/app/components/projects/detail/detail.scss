@@ -43,4 +43,17 @@
       }
     }
   }
+  @media screen and (min-width: 769px) {
+    .project {
+      display: flex;
+      margin: 0 5vw;
+      padding: 5vh 0;
+      .left {
+        width: 30%;
+      }
+      .right {
+        width: 70%;
+      }
+    }
+  }
 }

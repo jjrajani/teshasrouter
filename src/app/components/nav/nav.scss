@@ -11,6 +11,7 @@ $red: #C90059; // red
     margin: 0 0 2vh 0;
     font-size: 0.8em;
     transition: opacity 0.5s;
+    color: #701D5F;
     &.active {
       border-bottom: solid 1px lighten(grey, 20%);
       color: #701D5F;

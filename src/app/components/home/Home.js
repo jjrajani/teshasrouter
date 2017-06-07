@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import './home.scss';
 const logo = require("../../assets/lost-in-the-trees.png");
 const culturaLink = require("../../assets/culturalink.png");
@@ -40,38 +40,46 @@ class Home extends Component {
               <NavLink to="/portfolio/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></NavLink>
             </div>
             <div className="projects">
-              <div className="project">
-                <div className="screen-shot">
-                  <img className="image" src={ADP} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop} alt="Laptop"/>
+              <Link to="/portfolio/project/ADP">
+                <div className="project">
+                  <div className="screen-shot">
+                    <img className="image" src={ADP} alt="CulturaLink screen shot"/>
+                    <img className="laptop" src={laptop} alt="Laptop"/>
+                  </div>
+                  <p className="title">ADP Monitoring Services</p>
+                  <p className="language">ReactJS</p>
                 </div>
-                <p className="title">ADP Monitoring Services</p>
-                <p className="language">ReactJS</p>
-              </div>
-              <div className="project">
-                <div className="screen-shot">
-                  <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop} alt="Laptop"/>
+              </Link>
+              <Link to="/portfolio/project/culturaLink">
+                <div className="project">
+                  <div className="screen-shot">
+                    <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
+                    <img className="laptop" src={laptop} alt="Laptop"/>
+                  </div>
+                  <p className="title">CulturaLink Interpretation</p>
+                  <p className="language">ReactJS</p>
                 </div>
-                <p className="title">CulturaLink Interpretation</p>
-                <p className="language">ReactJS</p>
-              </div>
-              <div className="project">
-                <div className="screen-shot">
-                  <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop} alt="Laptop"/>
+              </Link>
+              <Link to="/portfolio/project/mailChimp">
+                <div className="project">
+                  <div className="screen-shot">
+                    <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
+                    <img className="laptop" src={laptop} alt="Laptop"/>
+                  </div>
+                  <p className="title">MailChimp Annual Report</p>
+                  <p className="language">Ruby on Rails</p>
                 </div>
-                <p className="title">MailChimp Annual Report</p>
-                <p className="language">Ruby on Rails</p>
-              </div>
-              <div className="project">
-                <div className="screen-shot">
-                  <img className="image" src={PSP} alt="CulturaLink screen shot"/>
-                  <img className="laptop" src={laptop} alt="Laptop"/>
+              </Link>
+              <Link to="/portfolio/project/PSP">
+                <div className="project">
+                  <div className="screen-shot">
+                    <img className="image" src={PSP} alt="CulturaLink screen shot"/>
+                    <img className="laptop" src={laptop} alt="Laptop"/>
+                  </div>
+                  <p className="title">PSP Printing</p>
+                  <p className="language">Angular2</p>
                 </div>
-                <p className="title">PSP Printing</p>
-                <p className="language">Angular2</p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

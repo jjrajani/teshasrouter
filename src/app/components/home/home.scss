@@ -33,13 +33,28 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 3vh;
-    .project {
+    a {
       width: 48%;
-      border-top: solid 1px lighten(black, 85%);
       margin: 2vh 1% 0;
+      border-top: solid 1px lighten(black, 85%);
+    }
+    .project {
+      margin-bottom: -1vh;
+      width: 100%;
+      background-color: white;
+      transition: background-color 1s;
+      padding-bottom: 1vh;
+      &:hover {
+        background-color: lighten(black, 98%);
+        p {
+          color: lighten(#701D5F, 10%);
+        }
+      }
       p {
+        transition: color 0.75s;
         margin: 1vh 5%;
         font-size: 1.3vh;
+        color: #701D5F;
         &.title {
           font-weight: 600;
         }
@@ -90,8 +105,11 @@
       }
     }
     .projects {
-      .project {
+      a {
         width: 23%;
+      }
+      .project {
+        width: 100%;
       }
     }
   }

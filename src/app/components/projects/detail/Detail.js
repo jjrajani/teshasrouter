@@ -19,15 +19,19 @@ class Detail extends Component {
     return (
        <div id="detail">
          <div className="project">
-           <p className="title">{project.title}</p>
-           <p className="blurb">{project.blurb}</p>
-           <p><span className="bold">Client: </span>{project.client}</p>
-           <div className="screen-shot">
-             <img className="image" src={project.img} alt="CulturaLink screen shot"/>
-             <img className="laptop" src={laptop} alt="Laptop"/>
+           <div className="left">
+             <p className="title">{project.title}</p>
+             <p className="blurb">{project.blurb}</p>
+             <p><span className="bold">Client: </span>{project.client}</p>
+             { this._projectDetails(project.details) }
+             { this._projectTechnology(project.technology) }
            </div>
-           { this._projectDetails(project.details) }
-           { this._projectTechnology(project.technology) }
+           <div className="right">
+             <div className="screen-shot">
+               <img className="image" src={project.img} alt="CulturaLink screen shot"/>
+               <img className="laptop" src={laptop} alt="Laptop"/>
+             </div>
+           </div>
          </div>
        </div>
     );
