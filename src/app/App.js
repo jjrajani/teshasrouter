@@ -19,11 +19,11 @@ class App extends Component {
             <Nav />
           </div>
           <Switch>
-            <Redirect exact from ="/portfolio" to="home"/>
-            <Route exact path="/portfolio/home" component={Home}/>
-            <Route path="/portfolio/resume" component={Resume}/>
-            <Route path="/portfolio/projects" component={Projects}/>
-            <Route path="/portfolio/contact" component={Contact}/>
+            <Redirect exact from ="/" to="home"/>
+            <Route exact path="/home" component={Home}/>
+            <Route path="/resume" component={Resume}/>
+            <Route path="/projects" component={Projects}/>
+            <Route path="/contact" component={Contact}/>
           </Switch>
           <Footer/>
         </div>

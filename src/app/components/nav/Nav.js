@@ -6,10 +6,10 @@ class Nav extends Component {
   render() {
     return (
        <div id="nav">
-         <NavLink to="/portfolio/home" activeClassName="active">Home</NavLink>
-         <NavLink to="/portfolio/resume" activeClassName="active">Resum&#233;</NavLink>
-         <NavLink to="/portfolio/projects" activeClassName="active">Projects</NavLink>
-         <NavLink to="/portfolio/contact" activeClassName="active">Contact</NavLink>
+         <NavLink to="/home" activeClassName="active">Home</NavLink>
+         <NavLink to="/resume" activeClassName="active">Resum&#233;</NavLink>
+         <NavLink to="/projects" activeClassName="active">Projects</NavLink>
+         <NavLink to="/contact" activeClassName="active">Contact</NavLink>
        </div>
     );
   }
