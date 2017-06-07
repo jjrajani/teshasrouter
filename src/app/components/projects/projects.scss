@@ -33,6 +33,9 @@
     opacity: 0.5;
     transition: opacity 1s;
   }
+  .sub-nav p {
+    transition: opacity 1s;
+  }
   div.bright {
     position: absolute;
     height: 100%;
@@ -40,6 +43,7 @@
     opacity: 0;
     background-color: white;
     z-index: 100;
+    transition: opacity 1s;
   }
 
   div.dim {
