@@ -2,10 +2,9 @@
   .app-header {
     padding: 0 5vw 1vh;
     .name {
-      font-size: 3.8vh;
+      font-size: 4vh;
       font-family: 'Oxygen', sans-serif;
       padding: 7vh 0 5vh 0;
-      color: lighten(black, 20%);
       color: #701D5F;
       // BC0097 bright purple
       // 701D5F dark purple
@@ -16,12 +15,12 @@
   }
   .main-content {
     margin: 2vh 5vw;
-    font-size: 1.4vh;
+    font-size: 1.6vh;
     font-weight: 300;
-    border-top: solid 1px lighten(black, 40%);
+    border-top: solid 1px lighten(black, 55%);
     .sub-content {
       padding: 1.8vh 0 11vh 0;
-      border-bottom: solid 1px lighten(black, 70%);
+      border-bottom: solid 1px lighten(black, 80%);
       .sub-header {
         display: flex;
         justify-content: space-between;
@@ -38,6 +37,15 @@
             color: lighten(black, 20%);
           }
           // border-bottom: solid 1px lighten(black, 85%);
+        }
+        p, a {
+          color: #701D5F;
+          transition: opacity 0.5s;
+          opacity: 0.5;
+          &:hover {
+            opacity: 1;
+            // color: lighten(#701D5F, 20%);
+          }
         }
       }
     }

@@ -56,7 +56,7 @@ class Home extends Component {
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
-                  <p className="title">CulturaLink Interpretation</p>
+                  <p className="title">CulturaLink</p>
                   <p className="language">ReactJS</p>
                 </div>
               </Link>
@@ -66,7 +66,7 @@ class Home extends Component {
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
-                  <p className="title">MailChimp Annual Report</p>
+                  <p className="title">MailChimp</p>
                   <p className="language">Ruby on Rails</p>
                 </div>
               </Link>

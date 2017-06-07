@@ -14,16 +14,24 @@
       margin: 4vh 0 0 0;
     }
     .phone, .email, .skype {
-      color: #BC0097 !important;
+      // color: lighten(#701D5F, 50%) !important;
+      color: #C90059 !important;
+      opacity: 0.7 !important;
+      transition: opacity 1s;
+      margin-right: auto;
+      &:hover {
+        // color: lighten(#701D5F, 35%) !important;
+        opacity: 1 !important;
+      }
       i {
         margin: 0 1vw 0 0 !important;
       }
     }
   }
   .message {
-    font-size: 3.4vh;
+    font-size: 3.6vh;
     margin: 2vh 0;
-    color: lighten(black, 10%);
+    color: #701D5F;
   }
   form {
     ul {
@@ -32,9 +40,9 @@
         flex-direction: column;
         label {
           font-weight: bold;
-          font-size: 1.5vh;
+          font-size: 1.7vh;
           margin: 1vh 0;
-          color: lighten(black, 30%);
+          color: lighten(black, 40%);
         }
         input {
           padding: 1.5vh 2vw;
@@ -48,12 +56,40 @@
           min-height: 18vh;
           width: 100%;
         }
+        input, textarea {
+          font-size: 1.5vh;
+          border-radius: 4px;
+          cursor: pointer;
+          outline: none;
+          border: solid 1px lighten(black, 85%);
+          transition: border-color 1s;
+          &:hover, &:focus {
+            border-color: lighten(black, 75%);
+          }
+          &:focus {
+            -webkit-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+            -moz-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+            box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+          }
+        }
       }
     }
     button {
       width: 20%;
       padding: 1.5vh 2vw;
       margin: 0 0 0 auto;
+      border-radius: 4px;
+      border: solid 1px #701D5F;//#701D5F;//lighten(black, 90%);
+      background-color: white;
+      color: #701D5F;
+      cursor: pointer;
+      transition: background-color 1s;
+      &:hover {
+        background-color: rgba(240,240,240,0.8);
+        -webkit-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+        -moz-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+        box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+      }
     }
   }
 }

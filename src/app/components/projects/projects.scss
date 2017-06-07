@@ -8,17 +8,26 @@
     }
   }
   .sub-nav {
+    display: flex;
+    flex-direction: column;
     p {
-      margin: 1vh 0 0vh 3vw;
+      margin: 1vh auto 0vh 3vw;
+      color: #701D5F;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: opacity 1s;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   .sub-content:first-child {
     border-bottom: none;
     padding-bottom: 0 !important;
   }
-  .bright {
+  p.bright {
     opacity: 1;
-    transition: opacity 1s;
+    color: #C90059;
   }
   .dim {
     opacity: 0.5;
@@ -67,7 +76,7 @@
         transition: color 0.75s;
         color: #701D5F;
         margin: 1vh 5%;
-        font-size: 1.3vh;
+        font-size: 1.6vh;
         &.title {
           font-weight: 600;
         }
