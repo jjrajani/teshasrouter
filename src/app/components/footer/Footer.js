@@ -15,8 +15,8 @@ class Footer extends Component {
         </div>
         <div className="right">
           <NavLink to="/portfolio/home" activeClassName="active">Home</NavLink>
-          <NavLink to="/portfolio/resume" activeClassName="active">Resum&#233;</NavLink>
           <NavLink to="/portfolio/projects" activeClassName="active">Projects</NavLink>
+          <NavLink to="/portfolio/resume" activeClassName="active">Resum&#233;</NavLink>
           <NavLink to="/portfolio/contact" activeClassName="active">Contact</NavLink>
         </div>
       </div>
