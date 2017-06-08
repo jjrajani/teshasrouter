@@ -6,7 +6,6 @@ const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-
 class Detail extends Component {
   constructor(props) {
     super(props);
-    console.log('params', props.match.params.projectName);
     let projectName = props.match.params.projectName;
     this.state = {
       project: PROJECTS[projectName]
@@ -18,7 +17,6 @@ class Detail extends Component {
   }
 
   render() {
-    console.log('this.state', this.state);
     let project = this.state.project;
     return (
        <div id="detail">
