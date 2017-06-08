@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './home.scss';
 const logo = require("../../assets/lost-in-the-trees.png");
 const culturaLink = require("../../assets/culturalink.png");
