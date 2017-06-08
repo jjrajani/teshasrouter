@@ -11,7 +11,7 @@ class Footer extends Component {
           <a href="https://www.linkedin.com/in/jenna-rajani/" target="blank"><i className="fa fa-linkedin-square" aria-hidden="true"/>Linkedin</a>
         </div>
         <div className="center">
-          <a href="#app">Top</a>
+          <a href="#app"><i className="fa fa-long-arrow-up"></i></a>
         </div>
         <div className="right">
           <NavLink to="/portfolio/home" activeClassName="active">Home</NavLink>
