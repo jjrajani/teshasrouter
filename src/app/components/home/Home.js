@@ -19,7 +19,7 @@ class Home extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Home</p>
-              <Link to="/portfolio/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to="/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="left">
               <div className="title-wrapper">
@@ -40,10 +40,10 @@ class Home extends Component {
           <div className="sub-content">
             <div className="sub-header">
               <p>Projects</p>
-              <Link to="/portfolio/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to="/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="projects">
-              <Link to="/portfolio/project/ADP">
+              <Link to="/project/ADP">
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
@@ -53,7 +53,7 @@ class Home extends Component {
                   <p className="language">ReactJS</p>
                 </div>
               </Link>
-              <Link to="/portfolio/project/culturaLink">
+              <Link to="/project/culturaLink">
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
@@ -63,7 +63,7 @@ class Home extends Component {
                   <p className="language">ReactJS</p>
                 </div>
               </Link>
-              <Link to="/portfolio/project/mailChimp">
+              <Link to="/project/mailChimp">
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
@@ -73,7 +73,7 @@ class Home extends Component {
                   <p className="language">Ruby on Rails</p>
                 </div>
               </Link>
-              <Link to="/portfolio/project/PSP">
+              <Link to="/project/PSP">
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>
