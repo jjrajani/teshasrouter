@@ -23,6 +23,7 @@
       &.list-item {
         margin-top: 0;
         margin-bottom: 0.25vh;
+        line-height: 2.2vh;
       }
       &.app-title {
         color: #BC0097;
@@ -31,8 +32,14 @@
       &.blurb {
         margin-top: 4vh !important;
         margin-bottom: 4vh !important;
-        line-height: 1.9vh;
+        line-height: 2.2vh;
         letter-spacing: 0.02rem;
+      }
+      &.astrisk {
+        margin-top: -3vh;
+        margin-bottom: 4vh;
+        color: lighten(#701D5F, 50%);
+        font-size: 1.3vh;
       }
       .bold {
         font-weight: bold;

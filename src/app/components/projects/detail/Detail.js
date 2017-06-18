@@ -25,6 +25,7 @@ class Detail extends Component {
              <p className="app-title title">{project.title}</p>
              { project.scale.length > 1 ? <p className="size">{project.scale}</p> : null }
              <p className="blurb">{project.blurb}</p>
+             { project.astrisk ? <p className="astrisk">{project.astrisk}</p> : null }
              <p><span className="bold">Client: </span>{project.client}</p>
              { this._projectDetails(project.details) }
              { this._projectTechnology(project.technology) }

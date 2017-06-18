@@ -61,6 +61,9 @@ class Projects extends Component {
             </div>
           </div>
           <div className="sub-content right">
+            <div className="sub-header">
+              <Link to="/portfolio/contact">Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+            </div>
             <div className="projects">
               <div className="project">
                 <Link to="/portfolio/project/ADP">

@@ -99,6 +99,15 @@
     flex-direction: row-reverse;
     .left {
       width: 30%;
+      text-align: right;
+      P { margin-right: 0.75vw; }
+      .phone, .email, .skype {
+        margin-left: auto;
+        margin-right: 0;
+        i {
+          margin-right: 0.5vw !important;
+        }
+      }
     }
     .right {
       width: 70%;
