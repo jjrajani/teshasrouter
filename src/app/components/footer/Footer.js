@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './footer.scss';
 import { NavLink } from "react-router-dom";
 
+let github = false;
+let prefix = github === true ? "/portfolio" : "";
+
 class Footer extends Component {
   render() {
     return (
@@ -15,12 +18,12 @@ class Footer extends Component {
         </div>
         <div className="right">
           <div className="footer_inner_right">
-            <NavLink to="/home" activeClassName="active">Home</NavLink>
-            <NavLink to="/projects" activeClassName="active">Projects</NavLink>
+            <NavLink to={prefix + "/home"} activeClassName="active">Home</NavLink>
+            <NavLink to={prefix + "/projects"} activeClassName="active">Projects</NavLink>
           </div>
           <div className="footer_inner_left">
-            <NavLink to="/resume" activeClassName="active">Resum&#233;</NavLink>
-            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+            <NavLink to={prefix + "/resume"} activeClassName="active">Resum&#233;</NavLink>
+            <NavLink to={prefix + "/contact"} activeClassName="active">Contact</NavLink>
           </div>
         </div>
       </div>

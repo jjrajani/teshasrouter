@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import './resume.scss';
 const resume = require("../../assets/Resume.pdf");
 
+
+let github = false;
+let prefix = github === true ? "/portfolio" : "";
+
 class Resume extends Component {
 
   componentDidMount() {
@@ -16,7 +20,7 @@ class Resume extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Resum&#233;</p>
-              <Link to="/projects">Projects <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={prefix + "/projects"}>Projects <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
           </div>
           <div className="sub-content left">

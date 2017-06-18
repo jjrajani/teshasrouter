@@ -9,6 +9,9 @@ import './app.scss';
 
 import { Contact, Detail, Home, Projects, Resume, Nav, Footer } from "./components";
 
+let github = false;
+let prefix = github === true ? "/portfolio" : "";
+
 class App extends Component {
 
   render() {
@@ -21,11 +24,11 @@ class App extends Component {
           </div>
           <Switch>
             <Redirect exact from ="/" to="home"/>
-            <Route exact path="/home" component={Home}/>
-            <Route exact path="/resume" component={Resume}/>
-            <Route exact path="/projects" component={Projects}/>
-            <Route exact path="/project/:projectName" component={Detail}/>
-            <Route exact path="/contact" component={Contact}/>
+            <Route exact path={prefix + "/home"} component={Home}/>
+            <Route exact path={prefix + "/resume"} component={Resume}/>
+            <Route exact path={prefix + "/projects"} component={Projects}/>
+            <Route exact path={prefix + "/project/:projectName"} component={Detail}/>
+            <Route exact path={prefix + "/contact"} component={Contact}/>
           </Switch>
           <Footer/>
         </div>

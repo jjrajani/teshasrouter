@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './contact.scss';
 
+let github = false;
+let prefix = github === true ? "/portfolio" : "";
+
 class Contact extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -12,7 +15,7 @@ class Contact extends Component {
         <div id="contact">
           <div className="sub-content top">
             <div className="sub-header">
-              <Link to="/home"><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
+              <Link to={prefix + "/home"}><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
               <p>Contact</p>
             </div>
           </div>
