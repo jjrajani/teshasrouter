@@ -20,7 +20,8 @@ class App extends Component {
             <Nav />
           </div>
           <Switch>
-            <Redirect exact from ="/portfolio" to="home"/>
+            <Redirect exact from ="/" to="portfolio/home"/>
+              <Redirect exact from ="/portfolio" to="home"/>
             <Route exact path="/portfolio/home" component={Home}/>
             <Route exact path="/portfolio/resume" component={Resume}/>
             <Route exact path="/portfolio/projects" component={Projects}/>
