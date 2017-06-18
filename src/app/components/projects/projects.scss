@@ -1,10 +1,15 @@
 #projects {
-  // border: solid orange 3px;
+  .left, .right {
+    padding-bottom: 8vh !important;
+  }
   .sub-header {
-    display: flex;
-    flex-direction: column;
-    p:nth-child(2) {
+    flex-wrap: wrap;
+    p:nth-child(1), p:nth-child(2) {
+      width: 50%;
+    }
+    p:nth-child(3) {
       margin: 3vh 0 4vh;
+      width: 100%;
     }
   }
   .sub-nav {
@@ -121,6 +126,10 @@
 @media screen and (min-width: 769px) {
   #projects {
     display: flex;
+    flex-wrap: wrap;
+    .top {
+      width: 100%;
+    }
     .left {
       width: 30%;
     }

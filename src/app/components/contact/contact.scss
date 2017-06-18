@@ -1,26 +1,27 @@
 #contact {
-  // border: solid purple 3px;
   .hidden {
     display: none;
     visibility: hidden;
   }
-  .sub-content:first-child {
-    padding-bottom: 3vh !important;
+  .top {
+    border-bottom: none !important;
+  }
+  .right {
+    padding-bottom: 8vh !important;
+  }
+  .left > .sub-header {
+    flex-direction: column;
   }
   .sub-header {
-    display: flex;
-    flex-direction: column;
     .phone, .email {
       margin: 4vh 0 0 0;
     }
     .phone, .email, .skype {
-      // color: lighten(#701D5F, 50%) !important;
       color: #C90059 !important;
       opacity: 0.7 !important;
       transition: opacity 1s;
       margin-right: auto;
       &:hover {
-        // color: lighten(#701D5F, 35%) !important;
         opacity: 1 !important;
       }
       i {
@@ -97,6 +98,15 @@
   #contact {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+    .sub-content.top {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 1vh !important;
+      .sub-header {
+        flex-direction: row;
+      }
+    }
     .left {
       width: 30%;
       text-align: right;

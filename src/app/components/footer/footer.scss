@@ -1,7 +1,6 @@
 #footer {
-  // border: solid orange 3px;
   display: flex;
-  margin: 0 5vw 12vh;
+  margin: 0 5vw 8vh;
   padding: 2vh 0 0 0;
   justify-content: space-between;
   p, a {
@@ -12,7 +11,6 @@
     opacity: 0.5;
     &:hover {
       opacity: 1;
-      // color: lighten(#701D5F, 20%);
     }
   }
   i {
@@ -33,7 +31,14 @@
     }
     &.right {
       flex-direction: row !important;
-      justify-content: flex-end !important;
+      flex-wrap: wrap;
+      justify-content: space-around !important;
+      .footer_inner_left, .footer_inner_right {
+        display: flex;
+        justify-content: space-around !important;
+        width: 50%;
+        flex-direction: row !important;
+      }
       a {
         min-width: 75px;
         text-align: right;
@@ -44,6 +49,14 @@
         flex-direction: row !important;
         a {
           min-width: 75px;
+        }
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      &.right {
+        justify-content: flex-end !important;
+        .footer_inner_left, .footer_inner_right {
+          justify-content: flex-end !important;
         }
       }
     }

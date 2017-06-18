@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './contact.scss';
+
+let github = false;
+let prefix = github === true ? "/portfolio" : "";
 
 class Contact extends Component {
   componentDidMount() {
@@ -9,9 +13,14 @@ class Contact extends Component {
     return (
       <div className="main-content">
         <div id="contact">
+          <div className="sub-content top">
+            <div className="sub-header">
+              <Link to={prefix + "/home"}><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
+              <p>Contact</p>
+            </div>
+          </div>
           <div className="sub-content left">
             <div className="sub-header">
-              <p>Contact</p>
               <a className="phone" href="tel:6786404262"><i className="fa fa-whatsapp" aria-hidden="true"></i>+1 678 640 4262</a>
               <a className="skype" href="skype:humdrum89"><i className="fa fa-skype" aria-hidden="true"></i>humdrum89</a>
               <a className="email" href="mailto:jjrajani@gmail.com">jjrajani@gmail.com</a>
@@ -35,7 +44,7 @@ class Contact extends Component {
                 </li>
                 <li>
                   <label htmlFor="message">Message:</label>
-                  <textarea name="message" id="message" placeholder="Message" required/>
+                  <textarea name="message" id="message" placeholder="Message" required></textarea>
                 </li>
                 <li>
                   <button type="submit" id="submit" name="submit" className="button">Send</button>
@@ -43,8 +52,7 @@ class Contact extends Component {
               </ul>
             </form>
             <div className="hidden" id="thankyou_message">
-              <h2><em>Thanks</em> for contacting us!
-                We will get back to you soon!</h2>
+              <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
             </div>
           </div>
         </div>
@@ -54,7 +62,3 @@ class Contact extends Component {
 }
 
 export default Contact;
-// <input type="hidden" name="cgiemail-mailopt" value="sync"/>
-// <input type="hidden" name="sendtoemail" value="jjrajani@gmail.com"/>
-// <input type="hidden" name="subject" value="JennaRajani.com - Contact Form"/>
-// <input type="hidden" name="redirect" value="http://www.jenna_rajani.com/thankyou"/>
