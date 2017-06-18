@@ -14,10 +14,14 @@ class Footer extends Component {
           <a href="#app"><i className="fa fa-long-arrow-up"></i></a>
         </div>
         <div className="right">
-          <NavLink to="/home" activeClassName="active">Home</NavLink>
-          <NavLink to="/projects" activeClassName="active">Projects</NavLink>
-          <NavLink to="/resume" activeClassName="active">Resum&#233;</NavLink>
-          <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+          <div className="footer_inner_right">
+            <NavLink to="/home" activeClassName="active">Home</NavLink>
+            <NavLink to="/projects" activeClassName="active">Projects</NavLink>
+          </div>
+          <div className="footer_inner_left">
+            <NavLink to="/resume" activeClassName="active">Resum&#233;</NavLink>
+            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+          </div>
         </div>
       </div>
     );

@@ -28,7 +28,7 @@ class Home extends Component {
               </div>
               <div className="blurb-wrapper">
                 <p className="blurb">I&#8216;m Jenna Rajani and love code for it&#8216;s endless possibility. I enjoy focusing on the user-experience as well as process efficiency while creating web applications.</p>
-                <p className="blurb">I have contributed to more than 3 large-scale applications and many smaller, design centered, applications. When I&#8216;m not coding you&#8216;ll find me either playing paino or planning my next excurssion.</p>
+                <p className="blurb">I have contributed to several large-scale applications and many small, design centered, applications. When I&#8216;m not coding you&#8216;ll find me either playing paino or planning my next excurssion.</p>
               </div>
             </div>
             <div className="right">

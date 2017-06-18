@@ -14,9 +14,8 @@ $red: #C90059; // red
     font-weight: normal;
     color: #701D5F;
     &.active {
-      border-bottom: solid 1px lighten(grey, 20%);
+      border-bottom: solid 1px #cccccc;
       color: #C90059;
-      // color: purple;
       font-weight: bold;
       &:hover {
         opacity: 1;

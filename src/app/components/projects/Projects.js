@@ -23,15 +23,17 @@ class Projects extends Component {
   }
 
   render() {
-    console.log("state", this.state)
     return (
       <div className="main-content">
         <div id="projects">
-          <div className="sub-content left">
+          <div className="sub-content top">
             <div className="sub-header">
-            <p>Projects</p>
-            <p>Here are my projects and personal work.</p>
+              <p>Projects</p>
+              <Link to="/contact">Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <p>Here are some of my projects and personal work.</p>
             </div>
+          </div>
+          <div className="sub-content left">
             <div className="sub-nav">
               <p
                 className={this.state.mode === "All" ? "bright" : "dim"}
@@ -61,9 +63,6 @@ class Projects extends Component {
             </div>
           </div>
           <div className="sub-content right">
-            <div className="sub-header">
-              <Link to="/contact">Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
-            </div>
             <div className="projects">
               <div className="project">
                 <Link to="/project/ADP">

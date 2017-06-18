@@ -1,4 +1,7 @@
 #home {
+  .right {
+    padding-bottom: 8vh !important;
+  }
   .title-wrapper {
     padding: 6vh 0 2vh 0;
     .title {
@@ -15,6 +18,9 @@
         line-height: 3.5vh;
       }
     }
+  }
+  .top {
+    padding-bottom: 4vh !important;
   }
   .blurb-wrapper {
     font-weight: 400;
@@ -40,7 +46,6 @@
     a {
       width: 48%;
       margin: 2vh 1% 0;
-      border-top: solid 1px lighten(black, 85%);
     }
     .project {
       margin-bottom: -1vh;
@@ -49,7 +54,7 @@
       transition: background-color 1s;
       padding-bottom: 1vh;
       &:hover {
-        background-color: lighten(black, 98%);
+        background-color: lighten(black, 96%);
         p {
           color: lighten(#701D5F, 10%);
         }
@@ -61,9 +66,6 @@
         color: #701D5F;
         &.title {
           font-weight: 600;
-        }
-        &.language {
-          // text-align: right;
         }
       }
       .screen-shot {
@@ -80,6 +82,14 @@
           border-radius: 2px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #home {
+    .top {
+      padding-bottom: 7vh !important;
     }
   }
 }
