@@ -11,7 +11,7 @@ import './app.scss';
 
 import { Contact, Detail, Home, Projects, Resume, Nav, Footer } from "./components";
 
-let github = false;
+let github = true;
 let redirect = github === true ? "/portfolio" : "/";
 let prefix = github === true ? "/portfolio" : "";
 

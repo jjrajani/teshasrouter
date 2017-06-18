@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './footer.scss';
 import { NavLink } from "react-router-dom";
 
-let github = false;
+let github = true;
 let prefix = github === true ? "/portfolio" : "";
 
 class Footer extends Component {
