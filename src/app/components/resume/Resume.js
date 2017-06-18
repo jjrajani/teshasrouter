@@ -16,7 +16,7 @@ class Resume extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Resum&#233;</p>
-              <Link to="/projects">Projects <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to="/portfolio/projects">Projects <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
           </div>
           <div className="sub-content left">
