@@ -1,2 +1,2 @@
 React Portfolio
-// "https://jjrajani.github.io/portfolio",
+// "https://jjrajani.github.io",

@@ -61,9 +61,12 @@ class Projects extends Component {
             </div>
           </div>
           <div className="sub-content right">
+            <div className="sub-header">
+              <Link to="/contact">Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+            </div>
             <div className="projects">
               <div className="project">
-                <Link to="/portfolio/project/ADP">
+                <Link to="/project/ADP">
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
@@ -74,7 +77,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to="/portfolio/project/culturaLink">
+                <Link to="/project/culturaLink">
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "fullstack" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
@@ -85,7 +88,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to="/portfolio/project/mailChimp">
+                <Link to="/project/mailChimp">
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
@@ -96,7 +99,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to="/portfolio/project/PSP">
+                <Link to="/project/PSP">
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>
@@ -107,7 +110,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to="/portfolio/project/myGarden">
+                <Link to="/project/myGarden">
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" || this.state.mode === "fullstack" ? "bright" : "dim"}></div>
                     <img className="image" src={myGarden} alt="myGarden screen shot"/>
@@ -118,7 +121,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to="/portfolio/project/cageSmash">
+                <Link to="/project/cageSmash">
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={cageSmash} alt="cageSmash screen shot"/>

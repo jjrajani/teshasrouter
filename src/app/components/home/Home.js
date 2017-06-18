@@ -21,7 +21,7 @@ class Home extends Component {
               <p>Home</p>
               <Link to="/resume">Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
-            <div className="left">
+            <div className="sub-content left">
               <div className="title-wrapper">
                 <p className="title one">WEB DEVELOPER</p>
                 <p className="title two">FRONT–END ENGINEER</p>
@@ -37,7 +37,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="sub-content">
+          <div className="sub-content right">
             <div className="sub-header">
               <p>Projects</p>
               <Link to="/projects">See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>

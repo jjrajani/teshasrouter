@@ -54,6 +54,13 @@
     background-color: white;
     z-index: 100;
   }
+  .right {
+    .sub-header {
+      flex-direction: row !important;
+      justify-content: flex-end !important;
+      margin-bottom: -1vh;
+    }
+  }
   .projects {
     display: flex;
     flex-wrap: wrap;
