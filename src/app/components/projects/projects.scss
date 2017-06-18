@@ -66,8 +66,17 @@
     flex-wrap: wrap;
     padding-top: 3vh;
     .project {
-      border-top: solid 1px lighten(black, 85%);
       transition: background-color 1s;
+      a {
+        display: inline-block;
+        padding-bottom: 5vh !important;
+      }
+      &:nth-child(1n+4) {
+        a { border-top: solid 1px lighten(black, 85%); }
+      }
+      &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3) {
+        a{ padding-bottom: 0 !important; }
+      }
       &:hover {
         background-color: lighten(black, 98%);
         p {
