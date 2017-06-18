@@ -12,7 +12,7 @@ const PROJECTS = {
     client: "ADP, Atlanta",
     blurb: "I performed as the sole frontend developer on this project and also built out a majority of the REST API. RabbitMQ and socket.io were used with React, Express, and Mongo to provide ADP product developers with a dashboard updated with the most current status of their active services.",
     details: ["Frontend Development", "Web Design", "Socket Connections", "API Design"],
-    technology: ["ReactJS", "SASS", "Express", "MongoDB", "Socket.io", "RabbitMQ", "Webpack"],
+    technology: ["React", "SASS", "Express", "MongoDB", "Socket.io", "RabbitMQ", "Webpack"],
     scale: "Large-Scale Application",
     features: [
       {
@@ -31,7 +31,7 @@ const PROJECTS = {
     client: "CulturaLink, Atlanta",
     blurb: "ClutraLink was my first professional project. I performed as the sole frontend developer. The app is a complete business solution providing CulturaLink not only with Video, Voice, and Document Translation Services but also Billing Reports, Revenue Charts and CSV Reports, Client and Interpreter Management, Permissions, and Individual Portals for Client, Admin, and Interpreter access.",
     details: ["Frontend Development", "Web Design"],
-    technology: ["ReactJS", "TypeScript", "Express", "Sequelize", "Jest", "HighCharts", "socket.io", "Videyo", "Webpack"],
+    technology: ["React", "TypeScript", "Express", "Sequelize", "Jest", "HighCharts", "socket.io", "Videyo", "Webpack"],
     scale: "Large-Scale Application",
     learnings: [
       {

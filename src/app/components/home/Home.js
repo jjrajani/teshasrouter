@@ -53,7 +53,7 @@ class Home extends Component {
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
                   <p className="title">ADP Monitoring Services</p>
-                  <p className="language">ReactJS</p>
+                  <p className="language">React</p>
                 </div>
               </Link>
               <Link to={prefix + "/project/culturaLink"}>
@@ -63,7 +63,7 @@ class Home extends Component {
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
                   <p className="title">CulturaLink</p>
-                  <p className="language">ReactJS</p>
+                  <p className="language">React</p>
                 </div>
               </Link>
               <Link to={prefix + "/project/mailChimp"}>

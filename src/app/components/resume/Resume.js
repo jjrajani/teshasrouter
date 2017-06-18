@@ -53,7 +53,7 @@ class Resume extends Component {
             </div>
             <div id="frameworks" className="sub-content">
               <p className="title">Frameworks</p>
-              <p>ReactJS, AngularJS, Ruby on Rails, D3.js, HighCharts</p>
+              <p>React, AngularJS, Ruby on Rails, D3.js, HighCharts</p>
             </div>
             <div id="build_tools" className="sub-content">
               <p className="title">Build Tools</p>

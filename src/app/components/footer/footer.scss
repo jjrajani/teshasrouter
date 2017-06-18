@@ -28,6 +28,10 @@
     }
     &.center {
       align-items: center;
+      justify-content: flex-end;
+      a {
+        position: relative;
+      }
     }
     &.right {
       flex-direction: row !important;

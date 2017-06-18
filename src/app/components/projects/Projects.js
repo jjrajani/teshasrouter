@@ -73,12 +73,12 @@ class Projects extends Component {
               <div className="project">
                 <Link to={prefix + "/project/ADP"}>
                   <div className="screen-shot">
-                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
+                    <div className={this.state.mode !== "personal" ? "bright" : "dim"}></div>
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
                   <p className="title">ADP Monitoring Services</p>
-                  <p className="language">ReactJS</p>
+                  <p className="language">React</p>
                 </Link>
               </div>
               <div className="project">
@@ -89,7 +89,7 @@ class Projects extends Component {
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
                   <p className="title">CulturaLink Interpretation</p>
-                  <p className="language">ReactJS</p>
+                  <p className="language">React</p>
                 </Link>
               </div>
               <div className="project">

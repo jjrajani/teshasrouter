@@ -1,11 +1,35 @@
 #app {
   .app-header {
     padding: 0 5vw 1vh;
+    .left {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 3vh 0;
+      .bottom {
+        font-size: 1.4vh;
+        margin-top: 1vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p, a {
+          color: #701D5F;
+          opacity: 0.5;
+          transition: opacity 0.75s;
+        }
+        a {
+          font-size: 2vh;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
     .name {
       font-size: 4vh;
       font-family: 'Oxygen', sans-serif;
-      padding: 7vh 0 5vh 0;
+      padding: 7vh 3vw 1vh 0vw;
       color: #701D5F;
+      border-bottom: solid 1px #701D5F;
       // BC0097 bright purple
       // 701D5F dark purple
       // C90059 red

@@ -10,8 +10,8 @@ class Footer extends Component {
     return (
       <div id="footer">
         <div className="left">
-          <a href="http://www.github.com/jjrajani" target="blank"><i className="fa fa-github-square" aria-hidden="true"/>Github</a>
           <a href="https://www.linkedin.com/in/jenna-rajani/" target="blank"><i className="fa fa-linkedin-square" aria-hidden="true"/>Linkedin</a>
+          <a href="http://www.github.com/jjrajani" target="blank"><i className="fa fa-github" aria-hidden="true"/>Github</a>
         </div>
         <div className="center">
           <a href="#app"><i className="fa fa-long-arrow-up"></i></a>
