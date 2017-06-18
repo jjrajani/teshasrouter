@@ -9,7 +9,7 @@ import './app.scss';
 
 import { Contact, Detail, Home, Projects, Resume, Nav, Footer } from "./components";
 
-let github = false;
+let github = true;
 let prefix = github === true ? "/portfolio" : "";
 
 class App extends Component {

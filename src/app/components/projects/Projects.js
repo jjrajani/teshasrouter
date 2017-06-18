@@ -9,7 +9,7 @@ const myGarden = require("../../assets/my-garden-ss.png");
 const cageSmash = require("../../assets/cage-smash-ss.png");
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
 
-let github = false;
+let github = true;
 let prefix = github === true ? "/portfolio" : "";
 
 class Projects extends Component {

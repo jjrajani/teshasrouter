@@ -8,7 +8,7 @@ const mailChimp = require("../../assets/mail-chimp.png");
 const PSP = require("../../assets/PSP.png");
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
 
-let github = false;
+let github = true;
 let prefix = github === true ? "/portfolio" : "";
 
 class Home extends Component {
@@ -66,7 +66,6 @@ class Home extends Component {
                   <p className="language">ReactJS</p>
                 </div>
               </Link>
-
               <Link to={prefix + "/project/mailChimp"}>
                 <div className="project">
                   <div className="screen-shot">
@@ -76,7 +75,7 @@ class Home extends Component {
                   <p className="title">MailChimp</p>
                   <p className="language">Ruby on Rails</p>
                 </div>
-
+              </Link>
               <Link to={prefix + "/project/PSP"}>
                 <div className="project">
                   <div className="screen-shot">

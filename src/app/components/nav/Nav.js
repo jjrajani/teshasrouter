@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './nav.scss';
 import { NavLink } from 'react-router-dom';
 
-let github = false;
+let github = true;
 let prefix = github === true ? "/portfolio" : "";
 
 class Nav extends Component {
