@@ -22,10 +22,10 @@ class App extends Component {
           <Switch>
             <Redirect exact from ="/" to="home"/>
             <Route exact path="/home" component={Home}/>
-            <Route path="/resume" component={Resume}/>
-            <Route path="/projects" component={Projects}/>
-            <Route path="/project/:projectName" component={Detail}/>
-            <Route path="/contact" component={Contact}/>
+            <Route exact path="/resume" component={Resume}/>
+            <Route exact path="/projects" component={Projects}/>
+            <Route exact path="/project/:projectName" component={Detail}/>
+            <Route exact path="/contact" component={Contact}/>
           </Switch>
           <Footer/>
         </div>
