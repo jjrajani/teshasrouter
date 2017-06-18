@@ -4,7 +4,7 @@ import './resume.scss';
 const resume = require("../../assets/Resume.pdf");
 
 
-let github = true;
+let github = false;
 let prefix = github === true ? "/portfolio" : "";
 
 class Resume extends Component {
