@@ -48,7 +48,7 @@ const PROJECTS = {
     img: mailChimp,
     title: "Mail Chimp Anual Report",
     client: "MailChimp, Atlanta",
-    blurb: "Given only a two week time frame, a partner delevoper and I delivered this award winning* year-end newsletter to mailChimp in the nick of time. Lazy loading with scroll dependant animations, GIF images.",
+    blurb: "Given only a two week time frame, a partner developer and I delivered this award winning* year-end newsletter to mailChimp in the nick of time. Lazy loading with scroll dependant animations, GIF images.",
     astrisk: "*Award winning for a design that I did not create.  However, this award demonstrates my (and my partner's) ability to communicate with designers and deliver their creations.",
     details: ["Frontend Development", "Web Design"],
     technology: ["Ruby on Rails", "JavaScript", "SASS"],
