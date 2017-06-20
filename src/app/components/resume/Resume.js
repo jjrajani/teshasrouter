@@ -5,6 +5,7 @@ const resume = require("../../assets/Resume.pdf");
 
 
 let github = false;
+let resumeLink = github === true ? resume : "https://jjrajani.github.io/portfolio/static/media/Resume.ab7b824e.pdf";
 let prefix = github === true ? "/portfolio" : "";
 
 class Resume extends Component {
@@ -25,7 +26,7 @@ class Resume extends Component {
           </div>
           <div className="sub-content left">
             <div className="resume_download">
-              <a href={resume} target="blank"><i className="fa fa-file-pdf-o" aria-hidden="true"></i>Dowload PDF</a>
+              <a href={resumeLink} target="blank"><i className="fa fa-file-pdf-o" aria-hidden="true"></i>Dowload PDF</a>
             </div>
             <div className="sub-nav">
               <a href="#frontend">Frontend</a>
