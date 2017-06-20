@@ -7,10 +7,10 @@ class Nav extends Component {
   render() {
     return (
        <div id="nav">
-         <NavLink to={VARS.prefix + "/home"} activeClassName="active">Home</NavLink>
-         <NavLink to={VARS.prefix + "/resume"} activeClassName="active">Resum&#233;</NavLink>
-         <NavLink to={VARS.prefix + "/projects"} activeClassName="active">Projects</NavLink>
-         <NavLink to={VARS.prefix + "/contact"} activeClassName="active">Contact</NavLink>
+         <NavLink to={VARS.routePrefix + "/home"} activeClassName="active">Home</NavLink>
+         <NavLink to={VARS.routePrefix + "/resume"} activeClassName="active">Resum&#233;</NavLink>
+         <NavLink to={VARS.routePrefix + "/projects"} activeClassName="active">Projects</NavLink>
+         <NavLink to={VARS.routePrefix + "/contact"} activeClassName="active">Contact</NavLink>
        </div>
     );
   }

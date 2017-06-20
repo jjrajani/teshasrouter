@@ -30,7 +30,7 @@ class Projects extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Projects</p>
-              <Link to={VARS.prefix + "/contact"}>Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={VARS.routePrefix + "/contact"}>Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
               <p>Here are some of my projects and personal work.</p>
             </div>
           </div>
@@ -69,7 +69,7 @@ class Projects extends Component {
             </div>
             <div className="projects">
               <div className="project">
-                <Link to={VARS.prefix + "/project/ADP"}>
+                <Link to={VARS.routePrefix + "/project/ADP"}>
                   <div className="screen-shot">
                     <div className={this.state.mode !== "personal" ? "bright" : "dim"}></div>
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
@@ -80,7 +80,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={VARS.prefix + "/project/culturaLink"}>
+                <Link to={VARS.routePrefix + "/project/culturaLink"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "fullstack" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
@@ -91,7 +91,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={VARS.prefix + "/project/mailChimp"}>
+                <Link to={VARS.routePrefix + "/project/mailChimp"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
@@ -102,7 +102,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={VARS.prefix + "/project/PSP"}>
+                <Link to={VARS.routePrefix + "/project/PSP"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>
@@ -113,7 +113,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={VARS.prefix + "/project/myGarden"}>
+                <Link to={VARS.routePrefix + "/project/myGarden"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" || this.state.mode === "fullstack" ? "bright" : "dim"}></div>
                     <img className="image" src={myGarden} alt="myGarden screen shot"/>
@@ -124,7 +124,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={VARS.prefix + "/project/cageSmash"}>
+                <Link to={VARS.routePrefix + "/project/cageSmash"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={cageSmash} alt="cageSmash screen shot"/>

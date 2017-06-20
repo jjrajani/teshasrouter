@@ -20,7 +20,7 @@ class Home extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Home</p>
-              <Link to={VARS.prefix + "/resume"}>Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={VARS.routePrefix + "/resume"}>Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="sub-content left">
               <div className="title-wrapper">
@@ -41,10 +41,10 @@ class Home extends Component {
           <div className="sub-content right">
             <div className="sub-header">
               <p>Projects</p>
-              <Link to={VARS.prefix + "/projects"}>See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={VARS.routePrefix + "/projects"}>See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="projects">
-              <Link to={VARS.prefix + "/project/ADP"}>
+              <Link to={VARS.routePrefix + "/project/ADP"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
@@ -54,7 +54,7 @@ class Home extends Component {
                   <p className="language">React</p>
                 </div>
               </Link>
-              <Link to={VARS.prefix + "/project/culturaLink"}>
+              <Link to={VARS.routePrefix + "/project/culturaLink"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
@@ -64,7 +64,7 @@ class Home extends Component {
                   <p className="language">React</p>
                 </div>
               </Link>
-              <Link to={VARS.prefix + "/project/mailChimp"}>
+              <Link to={VARS.routePrefix + "/project/mailChimp"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
@@ -74,7 +74,7 @@ class Home extends Component {
                   <p className="language">Ruby on Rails</p>
                 </div>
               </Link>
-              <Link to={VARS.prefix + "/project/PSP"}>
+              <Link to={VARS.routePrefix + "/project/PSP"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>

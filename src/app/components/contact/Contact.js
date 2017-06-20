@@ -13,7 +13,7 @@ class Contact extends Component {
         <div id="contact">
           <div className="sub-content top">
             <div className="sub-header">
-              <Link to={VARS.prefix + "/home"}><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
+              <Link to={VARS.routePrefix + "/home"}><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
               <p>Contact</p>
             </div>
           </div>

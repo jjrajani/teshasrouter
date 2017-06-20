@@ -16,12 +16,12 @@ class Footer extends Component {
         </div>
         <div className="right">
           <div className="footer_inner_right">
-            <NavLink to={VARS.prefix + "/home"} activeClassName="active">Home</NavLink>
-            <NavLink to={VARS.prefix + "/resume"} activeClassName="active">Resum&#233;</NavLink>
+            <NavLink to={VARS.routePrefix + "/home"} activeClassName="active">Home</NavLink>
+            <NavLink to={VARS.routePrefix + "/resume"} activeClassName="active">Resum&#233;</NavLink>
           </div>
           <div className="footer_inner_left">
-            <NavLink to={VARS.prefix + "/projects"} activeClassName="active">Projects</NavLink>
-            <NavLink to={VARS.prefix + "/contact"} activeClassName="active">Contact</NavLink>
+            <NavLink to={VARS.routePrefix + "/projects"} activeClassName="active">Projects</NavLink>
+            <NavLink to={VARS.routePrefix + "/contact"} activeClassName="active">Contact</NavLink>
           </div>
         </div>
       </div>

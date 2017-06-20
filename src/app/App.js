@@ -19,7 +19,7 @@ class App extends Component {
         <div id="app">
           <div className="app-header">
             <div className="left">
-              <Link to={VARS.prefix + "/home"} className="name">Jenna Rajani</Link>
+              <Link to={VARS.routePrefix + "/home"} className="name">Jenna Rajani</Link>
               <div className="bottom">
                 <p>Web Developer</p>
                 <a href="http://www.github.com/jjrajani" target="blank"><i className="fa fa-github" aria-hidden="true"/></a>
@@ -28,12 +28,12 @@ class App extends Component {
             <Nav />
           </div>
           <Switch>
-            <Redirect exact from={VARS.redirect} to={VARS.prefix + "/home"}/>
-            <Route exact path={VARS.prefix + "/home"} component={Home}/>
-            <Route exact path={VARS.prefix + "/resume"} component={Resume}/>
-            <Route exact path={VARS.prefix + "/projects"} component={Projects}/>
-            <Route exact path={VARS.prefix + "/project/:projectName"} component={Detail}/>
-            <Route exact path={VARS.prefix + "/contact"} component={Contact}/>
+            <Redirect exact from={VARS.redirect} to={VARS.routePrefix + "/home"}/>
+            <Route exact path={VARS.routePrefix + "/home"} component={Home}/>
+            <Route exact path={VARS.routePrefix + "/resume"} component={Resume}/>
+            <Route exact path={VARS.routePrefix + "/projects"} component={Projects}/>
+            <Route exact path={VARS.routePrefix + "/project/:projectName"} component={Detail}/>
+            <Route exact path={VARS.routePrefix + "/contact"} component={Contact}/>
           </Switch>
           <Footer/>
         </div>
