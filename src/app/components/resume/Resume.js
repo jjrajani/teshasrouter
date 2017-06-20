@@ -11,6 +11,9 @@ class Resume extends Component {
   }
 
   render() {
+    let resumeLink = VARS.github === true
+    ? resume
+    : "https://jjrajani.github.io/portfolio/static/media/Resume.ab7b824e.pdf";
     return (
       <div className="main-content">
         <div id="resume">
@@ -22,7 +25,7 @@ class Resume extends Component {
           </div>
           <div className="sub-content left">
             <div className="resume_download">
-              <a href={VARS.resumeLink} target="blank"><i className="fa fa-file-pdf-o" aria-hidden="true"></i>Dowload PDF</a>
+              <a href={resumeLink} target="blank"><i className="fa fa-file-pdf-o" aria-hidden="true"></i>Dowload PDF</a>
             </div>
             <div className="sub-nav">
               <a href="#frontend">Frontend</a>
