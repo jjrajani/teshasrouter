@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './contact.scss';
 
-let github = true;
+let github = false;
 let prefix = github === true ? "/portfolio" : "";
 
 class Contact extends Component {

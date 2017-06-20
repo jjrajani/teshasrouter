@@ -2,7 +2,7 @@
   "name": "portfoilo_two",
   "version": "0.2.0",
   "private": false,
-  "homepage": "https://jjrajani.github.io/portfolio",
+  "homepage": "http://tiy-humdrum-jenna-rajani.surge.sh/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
