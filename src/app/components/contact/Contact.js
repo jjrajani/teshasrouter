@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { VARS } from "../../VARS";
 import './contact.scss';
-
-let github = false;
-let prefix = github === true ? "/portfolio" : "";
 
 class Contact extends Component {
   componentDidMount() {
@@ -15,7 +13,7 @@ class Contact extends Component {
         <div id="contact">
           <div className="sub-content top">
             <div className="sub-header">
-              <Link to={prefix + "/home"}><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
+              <Link to={VARS.prefix + "/home"}><i className="fa fa-angle-left" aria-hidden="true"></i> Home</Link>
               <p>Contact</p>
             </div>
           </div>

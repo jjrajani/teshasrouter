@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { VARS } from "../../VARS";
 import './projects.scss';
 const culturaLink = require("../../assets/culturalink.png");
 const ADP = require("../../assets/ADP.png");
@@ -8,9 +9,6 @@ const PSP = require("../../assets/PSP.png");
 const myGarden = require("../../assets/my-garden-ss.png");
 const cageSmash = require("../../assets/cage-smash-ss.png");
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
-
-let github = false;
-let prefix = github === true ? "/portfolio" : "";
 
 class Projects extends Component {
 
@@ -32,7 +30,7 @@ class Projects extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Projects</p>
-              <Link to={prefix + "/contact"}>Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={VARS.prefix + "/contact"}>Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
               <p>Here are some of my projects and personal work.</p>
             </div>
           </div>
@@ -71,7 +69,7 @@ class Projects extends Component {
             </div>
             <div className="projects">
               <div className="project">
-                <Link to={prefix + "/project/ADP"}>
+                <Link to={VARS.prefix + "/project/ADP"}>
                   <div className="screen-shot">
                     <div className={this.state.mode !== "personal" ? "bright" : "dim"}></div>
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
@@ -82,7 +80,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={prefix + "/project/culturaLink"}>
+                <Link to={VARS.prefix + "/project/culturaLink"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "fullstack" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
@@ -93,18 +91,18 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={prefix + "/project/mailChimp"}>
+                <Link to={VARS.prefix + "/project/mailChimp"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
                     <img className="laptop" src={laptop} alt="Laptop"/>
                   </div>
                   <p className="title">MailChimp Annual Report</p>
-                  <p className="language">Ruby on Rails</p>
+                  <p className="language">JavaScript</p>
                 </Link>
               </div>
               <div className="project">
-                <Link to={prefix + "/project/PSP"}>
+                <Link to={VARS.prefix + "/project/PSP"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>
@@ -115,7 +113,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={prefix + "/project/myGarden"}>
+                <Link to={VARS.prefix + "/project/myGarden"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" || this.state.mode === "fullstack" ? "bright" : "dim"}></div>
                     <img className="image" src={myGarden} alt="myGarden screen shot"/>
@@ -126,7 +124,7 @@ class Projects extends Component {
                 </Link>
               </div>
               <div className="project">
-                <Link to={prefix + "/project/cageSmash"}>
+                <Link to={VARS.prefix + "/project/cageSmash"}>
                   <div className="screen-shot">
                     <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
                     <img className="image" src={cageSmash} alt="cageSmash screen shot"/>

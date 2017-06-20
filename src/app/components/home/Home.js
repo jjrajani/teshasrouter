@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { VARS } from "../../VARS";
 import './home.scss';
 const logo = require("../../assets/lost-in-the-trees.png");
 const culturaLink = require("../../assets/culturalink.png");
@@ -7,9 +8,6 @@ const ADP = require("../../assets/ADP.png");
 const mailChimp = require("../../assets/mail-chimp.png");
 const PSP = require("../../assets/PSP.png");
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
-
-let github = false;
-let prefix = github === true ? "/portfolio" : "";
 
 class Home extends Component {
   componentDidMount() {
@@ -22,7 +20,7 @@ class Home extends Component {
           <div className="sub-content top">
             <div className="sub-header">
               <p>Home</p>
-              <Link to={prefix + "/resume"}>Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={VARS.prefix + "/resume"}>Resum&#233; <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="sub-content left">
               <div className="title-wrapper">
@@ -43,10 +41,10 @@ class Home extends Component {
           <div className="sub-content right">
             <div className="sub-header">
               <p>Projects</p>
-              <Link to={prefix + "/projects"}>See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+              <Link to={VARS.prefix + "/projects"}>See more <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
             <div className="projects">
-              <Link to={prefix + "/project/ADP"}>
+              <Link to={VARS.prefix + "/project/ADP"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={ADP} alt="CulturaLink screen shot"/>
@@ -56,7 +54,7 @@ class Home extends Component {
                   <p className="language">React</p>
                 </div>
               </Link>
-              <Link to={prefix + "/project/culturaLink"}>
+              <Link to={VARS.prefix + "/project/culturaLink"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
@@ -66,7 +64,7 @@ class Home extends Component {
                   <p className="language">React</p>
                 </div>
               </Link>
-              <Link to={prefix + "/project/mailChimp"}>
+              <Link to={VARS.prefix + "/project/mailChimp"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
@@ -76,7 +74,7 @@ class Home extends Component {
                   <p className="language">Ruby on Rails</p>
                 </div>
               </Link>
-              <Link to={prefix + "/project/PSP"}>
+              <Link to={VARS.prefix + "/project/PSP"}>
                 <div className="project">
                   <div className="screen-shot">
                     <img className="image" src={PSP} alt="CulturaLink screen shot"/>
