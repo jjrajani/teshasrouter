@@ -36,7 +36,7 @@ export const PROJECTS = {
     technology: ["React", "SASS", "Express", "MongoDB", "Socket.io", "RabbitMQ", "Webpack"],
   },
   culturaLink: {
-    appTitle: "CulturaLink Interpretation",
+    appTitle: "CulturaLink",
     blurb: "ClutraLink was my first professional project. I performed as the sole frontend developer. The app is a complete business solution providing CulturaLink not only with Video, Voice, and Document Translation Services but also Billing Reports, Revenue Charts and CSV Reports, Client and Interpreter Management, Permissions, and Individual Portals for Client, Admin, and Interpreter access.",
     client: "CulturaLink, Atlanta",
     details: ["Frontend Development", "Web Design"],
