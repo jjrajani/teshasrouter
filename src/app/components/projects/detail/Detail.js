@@ -17,6 +17,7 @@ class Detail extends Component {
 
   render() {
     let project = this.state.project;
+    console.log(project)
     return (
        <div id="detail">
          <div className="project">
