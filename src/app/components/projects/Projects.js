@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { VARS } from "../../VARS";
 import './projects.scss';
-const culturaLink = require("../../assets/culturalink.png");
-const ADP = require("../../assets/ADP.png");
-const mailChimp = require("../../assets/mail-chimp.png");
-const PSP = require("../../assets/PSP.png");
-const myGarden = require("../../assets/my-garden-ss.png");
-const cageSmash = require("../../assets/cage-smash-ss.png");
-const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
+import { PROJECTS, LAPTOP } from "./projectsJSON";
 
 class Projects extends Component {
+
+  modes = [
+    "All",
+    "Professional",
+    "Personal",
+    "Frontend",
+    "Fullstack",
+  ]
 
   constructor(props) {
     super(props);
@@ -35,109 +37,59 @@ class Projects extends Component {
             </div>
           </div>
           <div className="sub-content left">
-            <div className="sub-nav">
-              <p
-                className={this.state.mode === "All" ? "bright" : "dim"}
-                onClick={this._toggleVisible.bind(this, "All")}
-              >All
-              </p>
-              <p
-                className={this.state.mode === "professional" ? "bright" : "dim"}
-                onClick={this._toggleVisible.bind(this, "professional")}
-              >Professional
-              </p>
-              <p
-                className={this.state.mode === "personal" ? "bright" : "dim"}
-                onClick={this._toggleVisible.bind(this, "personal")}
-              >Personal
-              </p>
-              <p
-                className={this.state.mode === "frontend" ? "bright" : "dim"}
-                onClick={this._toggleVisible.bind(this, "frontend")}
-              >Frontend
-              </p>
-              <p
-                className={this.state.mode === "fullstack" ? "bright" : "dim"}
-                onClick={this._toggleVisible.bind(this, "fullstack")}
-              >Fullstack
-              </p>
-            </div>
+            { this._subNav() }
           </div>
           <div className="sub-content right">
             <div className="sub-header">
               <Link to="/portfolio/contact">Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
             </div>
-            <div className="projects">
-              <div className="project">
-                <Link to={VARS.routePrefix + "/project/ADP"}>
-                  <div className="screen-shot">
-                    <div className={this.state.mode !== "personal" ? "bright" : "dim"}></div>
-                    <img className="image" src={ADP} alt="CulturaLink screen shot"/>
-                    <img className="laptop" src={laptop} alt="Laptop"/>
-                  </div>
-                  <p className="title">ADP Monitoring Services</p>
-                  <p className="language">React</p>
-                </Link>
-              </div>
-              <div className="project">
-                <Link to={VARS.routePrefix + "/project/culturaLink"}>
-                  <div className="screen-shot">
-                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "fullstack" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
-                    <img className="image" src={culturaLink} alt="CulturaLink screen shot"/>
-                    <img className="laptop" src={laptop} alt="Laptop"/>
-                  </div>
-                  <p className="title">CulturaLink Interpretation</p>
-                  <p className="language">React</p>
-                </Link>
-              </div>
-              <div className="project">
-                <Link to={VARS.routePrefix + "/project/mailChimp"}>
-                  <div className="screen-shot">
-                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
-                    <img className="image" src={mailChimp} alt="CulturaLink screen shot"/>
-                    <img className="laptop" src={laptop} alt="Laptop"/>
-                  </div>
-                  <p className="title">MailChimp Annual Report</p>
-                  <p className="language">JavaScript</p>
-                </Link>
-              </div>
-              <div className="project">
-                <Link to={VARS.routePrefix + "/project/PSP"}>
-                  <div className="screen-shot">
-                    <div className={this.state.mode === "All" || this.state.mode === "professional" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
-                    <img className="image" src={PSP} alt="CulturaLink screen shot"/>
-                    <img className="laptop" src={laptop} alt="Laptop"/>
-                  </div>
-                  <p className="title">PSP Printing</p>
-                  <p className="language">Angular2</p>
-                </Link>
-              </div>
-              <div className="project">
-                <Link to={VARS.routePrefix + "/project/myGarden"}>
-                  <div className="screen-shot">
-                    <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" || this.state.mode === "fullstack" ? "bright" : "dim"}></div>
-                    <img className="image" src={myGarden} alt="myGarden screen shot"/>
-                    <img className="laptop" src={laptop} alt="Laptop"/>
-                  </div>
-                  <p className="title">myGarden</p>
-                  <p className="language">Angular</p>
-                </Link>
-              </div>
-              <div className="project">
-                <Link to={VARS.routePrefix + "/project/cageSmash"}>
-                  <div className="screen-shot">
-                    <div className={this.state.mode === "All" || this.state.mode === "personal" || this.state.mode === "frontend" ? "bright" : "dim"}></div>
-                    <img className="image" src={cageSmash} alt="cageSmash screen shot"/>
-                    <img className="laptop" src={laptop} alt="Laptop"/>
-                  </div>
-                  <p className="title">cageSmash</p>
-                  <p className="language">Javascript</p>
-                </Link>
-              </div>
-            </div>
+            { this._projects() }
           </div>
         </div>
      </div>
+    );
+  }
+
+  _subNav = () => {
+    let modes = this.modes.map((mode, i) => {
+      return (
+        <p
+          key={i}
+          className={this.state.mode === mode ? "bright" : "dim"}
+          onClick={this._toggleVisible.bind(this, mode)}
+        >{mode}
+        </p>
+      );
+    })
+    return <div className="sub-nav">{ modes }</div>;
+  }
+
+  _projects = () => {
+    let projects = [];
+    Object.keys(PROJECTS).forEach((p, i) => {
+      projects.push(this._project(PROJECTS[p], p, i));
+    });
+    return (
+      <div className="projects">
+        { projects }
+      </div>
+    );
+  }
+
+  _project = (project, p, i) => {
+    let mode = (project.stackLevels.includes(this.state.mode) || this.state.mode === "All") ? "bright" : "dim";
+    return (
+      <div key={i} className="project">
+        <Link to={VARS.routePrefix + "/project/" + p}>
+          <div className="screen-shot">
+            <div className={mode}></div>
+            <img className="image" src={project.screenShot} alt={project.appTitle + " screen shot"}/>
+            <img className="laptop" src={LAPTOP} alt="Laptop"/>
+          </div>
+          <p className="title">{project.appTitle}</p>
+          <p className="language">{project.languages.main}</p>
+        </Link>
+      </div>
     );
   }
 

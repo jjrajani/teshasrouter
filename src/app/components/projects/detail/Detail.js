@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './detail.scss';
-import PROJECTS from "./projects";
-const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
+import { PROJECTS, LAPTOP } from "../projectsJSON";
 
 class Detail extends Component {
   constructor(props) {
@@ -22,8 +21,8 @@ class Detail extends Component {
        <div id="detail">
          <div className="project">
            <div className="left">
-             <p className="app-title title">{project.title}</p>
-             { project.scale.length > 1 ? <p className="size">{project.scale}</p> : null }
+             <p className="app-title title">{project.appTitle}</p>
+             <p className="size">{project.scale}</p>
              <p className="blurb">{project.blurb}</p>
              { project.astrisk ? <p className="astrisk">{project.astrisk}</p> : null }
              <p><span className="bold">Client: </span>{project.client}</p>
@@ -33,8 +32,8 @@ class Detail extends Component {
            </div>
            <div className="right">
              <div className="screen-shot">
-               <img className="image" src={project.img} alt="CulturaLink screen shot"/>
-               <img className="laptop" src={laptop} alt="Laptop"/>
+               <img className="image" src={project.screenShot} alt="CulturaLink screen shot"/>
+               <img className="laptop" src={LAPTOP} alt="Laptop"/>
              </div>
            </div>
          </div>
