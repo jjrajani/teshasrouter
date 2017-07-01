@@ -22,7 +22,7 @@ class App extends Component {
               <Link to={VARS.routePrefix + "/home"} className="name">Jenna Rajani</Link>
               <div className="bottom">
                 <p>Web Developer</p>
-                <a href="http://www.github.com/jjrajani" target="blank"><i className="fa fa-github" aria-hidden="true"/></a>
+                <a href="http://www.github.com/jjrajani" target="blank" alt="github link"><i className="fa fa-github" aria-hidden="true"/></a>
               </div>
             </div>
             <Nav />
