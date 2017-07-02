@@ -26,7 +26,7 @@ class Contact extends Component {
           </div>
           <div className="sub-content right">
             <p className="message">Send me a message</p>
-            <form id="form" action="https://script.google.com/macros/s/AKfycbyhthAKEEKBnlqLKVFsyfv6wmej4Q_0PKisv_S3xOv4YDtYCVw/exec" encType="multipart/form-data" method="POST">
+            <form id="form" action="https://formspree.io/jjrajani@gmail.com" method="POST">
               <ul>
                 <li>
                   <label htmlFor="name">Your name:</label>
@@ -47,6 +47,9 @@ class Contact extends Component {
                 <li>
                   <button type="submit" id="submit" name="submit" className="button">Send</button>
                 </li>
+                <input type="hidden" name="_next" value="http://localhost:3005/thankyou" />
+                <input type="text" name="_gotcha" style={{display:"none"}} />
+                <input type="hidden" name="_subject" value="From My Portfolio" />
               </ul>
             </form>
             <div className="hidden" id="thankyou_message">
@@ -60,3 +63,6 @@ class Contact extends Component {
 }
 
 export default Contact;
+
+
+// <input type="hidden" name="_next" value="https://jjrajani.github.io/thankyou" />

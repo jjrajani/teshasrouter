@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import './app.scss';
 import { VARS } from "./VARS";
-import { Contact, Detail, Home, Projects, Resume, Nav, Footer } from "./components";
+import { Contact, Detail, Home, Projects, Resume, ThankYou, Nav, Footer } from "./components";
 
 class App extends Component {
 
@@ -35,6 +35,7 @@ class App extends Component {
             <Route exact path={VARS.routePrefix + "/projects"} component={Projects}/>
             <Route exact path={VARS.routePrefix + "/project/:projectName"} component={Detail}/>
             <Route exact path={VARS.routePrefix + "/contact"} component={Contact}/>
+            <Route exact path={VARS.routePrefix + "/thankyou"} component={ThankYou}/>
           </Switch>
           <Footer/>
         </div>
