@@ -30,6 +30,7 @@ class App extends Component {
           <Switch>
             <Redirect exact from={VARS.redirect} to={VARS.routePrefix + "/home"}/>
             <Redirect exact from={"/portfolio"} to={VARS.routePrefix + "/home"}/>
+            <Redirect exact from={"/portfolio/thankyou"} to={VARS.routePrefix + "/thankyou"}/>
             <Route exact path={VARS.routePrefix + "/home"} component={Home}/>
             <Route exact path={VARS.routePrefix + "/resume"} component={Resume}/>
             <Route exact path={VARS.routePrefix + "/projects"} component={Projects}/>

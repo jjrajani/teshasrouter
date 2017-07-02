@@ -47,7 +47,7 @@ class Contact extends Component {
                 <li>
                   <button type="submit" id="submit" name="submit" className="button">Send</button>
                 </li>
-                <input type="hidden" name="_next" value="http://localhost:3005/thankyou" />
+                <input type="hidden" name="_next" value="https://jjrajani.github.io/portfolio/thankyou" />
                 <input type="text" name="_gotcha" style={{display:"none"}} />
                 <input type="hidden" name="_subject" value="From My Portfolio" />
               </ul>
@@ -63,6 +63,3 @@ class Contact extends Component {
 }
 
 export default Contact;
-
-
-// <input type="hidden" name="_next" value="https://jjrajani.github.io/thankyou" />
